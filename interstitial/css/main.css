@@ -1,0 +1,239 @@
+html, body{
+    height: 100%;
+}
+
+/* Main styles */
+body{
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiNkZWRlZGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmJiYmJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #dedede 72%, #bbbbbb 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(72%,#dedede), color-stop(100%,#bbbbbb));
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#dedede 72%,#bbbbbb 100%);
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#dedede 72%,#bbbbbb 100%);
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#dedede 72%,#bbbbbb 100%);
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#dedede 72%,#bbbbbb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+a{
+    color:#c400ff;
+}
+
+a:hover{
+    color:#8b01c2;
+}
+
+
+.logo-main a{
+    width: 800px;
+    height: 218px;
+    display: block;
+    overflow: hidden;
+}
+
+.logo-main a:hover{
+    text-decoration: none;
+}
+
+
+
+.logo-main{
+    background: url('../img/logo/player-logo.png') no-repeat top left;
+    width: 800px;
+    height: 218px;
+    margin: auto;
+    animation: fadein 7s;
+    -moz-animation: fadein 7s; /* Firefox */
+    -webkit-animation: fadein 7s; /* Safari and Chrome */
+    -o-animation: fadein 7s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo-main:hover{
+    background: url('../img/logo/player-logo-glow.png');
+}
+
+.logo-wrapper{
+    height:100%;
+}
+
+.hidden{
+    display: none
+}
+
+.footer-main, .footer-main address{
+    font-size: 9px;
+    line-height: 1em;
+}
+
+.footer-main{
+    position:fixed;
+    width:100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-main address{
+    float:left;
+    margin-left:15px;
+}
+
+.footer-main address.maia{
+    margin-left:100px;
+}
+
+.footer-main address strong,.footer-main address abbr{
+    color:#8b01c2;
+    font-weight: bold;
+}
+
+.footer-main .copyright-info{
+    clear:both;
+    text-align:center;
+    width: 40%;
+    margin:auto;
+}
+
+.footer-main .copyright-info p{
+    line-height: 1em;
+    font-weight:bold;
+}
+
+.footer-main .contacts-info{
+    clear:left;
+}
+
+.footer-main .main-nav{
+    position:absolute;
+    right:0px;
+    top: -60px;
+}
+
+.footer-main .main-nav a:hover{
+    animation: slideLeft 1.5s;
+    -moz-animation: slideLeft 1.5s; /* Firefox */
+    -webkit-animation: slideLeft 1.5s; /* Safari and Chrome */
+    -o-animation: slideLeft 1.5s; /* Opera */
+    right: 30px;
+}
+
+@keyframes slideLeft {
+    from {
+        right:0;
+    }
+    to {
+        right:30px;
+    }
+}
+@-moz-keyframes slideLeft { /* Firefox */
+    from {
+        right:0;
+    }
+    to {
+        right:30px;
+    }
+}
+@-webkit-keyframes slideLeft { /* Safari and Chrome */
+    from {
+        right:0;
+    }
+    to {
+        right:30px;
+    }
+}
+@-o-keyframes slideLeft { /* Opera */
+    from {
+        right:0;
+    }
+    to {
+        right:30px;
+    }
+}
+
+.footer-main .main-nav a{
+    color: #fff;
+    font-size:21px;
+    background-color:#c400ff;
+    line-height:24px;
+    padding:10px 50px;
+    box-shadow: -10px 5px 20px 5px #bbbbbb;
+    border-radius: 9px 0 0 9px;
+    position:relative;
+    display: block;
+}
+
+.footer-main .main-nav a .pointer{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 22px 0 22px 20px;
+    border-color: transparent transparent transparent #c400ff;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.footer-main .main-nav a:hover{
+    text-decoration:none;
+}
+
+.footer-main .sponsor-images{
+    position: absolute;
+    top:-65px;
+    left:0px;
+}
+
+.footer-main .sponsor-images .braga-shopping-logo{
+    background: url('../img/sponsor-logos/braga-shopping-logo.png') no-repeat top left;
+    width:200px;
+    height:106px;
+    overflow: hidden;
+    margin-left: 12px;
+    float: left;
+    
+}
+
+.footer-main .sponsor-images .vivaci-logo{
+    background: url('../img/sponsor-logos/vivaci-logo.png') no-repeat top left;
+    width:100px;
+    height:53px;
+    overflow: hidden;
+    margin-left: 35px;
+    float: left;
+    margin-top:7px
+}
